@@ -7,14 +7,13 @@ var qsRegex;        // quick search regex
 var $grid = $('#stages').isotope({
   // options
   itemSelector: '.stage',
-  layoutMode: 'fitRows',
-  fitWidth: 'true',
+  layoutMode: 'vertical',
   filter: function() {
-    var $this = $(this);
-    var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
-    var buttonResult = filterValue ? $this.is( filterValue ) : true;
-    return searchResult && buttonResult;
-  }
+      var $this = $(this);
+      var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+      var buttonResult = filterValue ? $this.is( filterValue ) : true;
+      return searchResult && buttonResult;
+    }
 });
 
 var iso = $grid.data('isotope');
@@ -58,12 +57,17 @@ $('.filter-button-group').each( function( i, buttonGroup ) {
 // https://isotope.metafizzy.co/filtering.html
 // eg filter .metal AND .transition items:  $grid.isotope({ filter: '.metal.transition' });
 // home + new + stdstart + fulltime + campus
-// $grid.isotope({ filter: '.home.new.stdstart.fulltime.campus' });
-// --> this works but then buttons can't change it!  as overides the init above?
+//$grid.isotope({ filter: '.home.new.stdstart.fulltime.campus' });
+// --> this works but then buttons can't change it!  as overides the init above!
 
-
-
-
+// init = no selected buttons + show all content
+// https://stackoverflow.com/questions/32377281/isotope-combine-search-and-buttons-with-initial-filter
+// so "click" buttons to get to ideal start state...
+$('.filterbuttons .btn-group .btn[data-filter=".home"]').trigger('click');
+$('.filterbuttons .btn-group .btn[data-filter=".new"]').trigger('click');
+$('.filterbuttons .btn-group .btn[data-filter=".stdstart"]').trigger('click');
+$('.filterbuttons .btn-group .btn[data-filter=".fulltime"]').trigger('click');
+$('.filterbuttons .btn-group .btn[data-filter=".campus"]').trigger('click');
 
 
 
