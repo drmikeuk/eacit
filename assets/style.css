@@ -12,6 +12,14 @@
 .sos .radios .form-check      {margin-bottom: 0.25em}
 .sos .radios                  {margin-bottom: 1.25em}
 
+/* not working as last valid one overwite; also icons not appending
+.sos .home h3::after          {content: " uk ";}
+.sos .eu h3::after            {content: " eu ";}
+.sos .international h3::after {content: " int ";} */
+
+
+
+
 /* isotope */
 .sos .btn-group               {margin-right: 1em;}
 .sos .filterbuttons .btn      {padding: 0.375rem 0.6rem; background: #ddd;}
