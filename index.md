@@ -1,12 +1,25 @@
 ---
-layout: default
-title: "Home"
+layout: home
+title: "EACIT"
+header-img: images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg
 ---
 
-<h2>Test of layout = default</h2>
+<div class="container">
+  <div class="col-md-6">
 
-ie no bootstrap container etc so fills body  width...
+    <h2>Projects</h2>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum. Cras sit amet erat eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    <ul >
+      {% comment %} Only include pages with `nav: yes` in the front-matter; sort on sortTitle{% endcomment %}
+      {% assign pages = (site.pages | where: "nav","yes" | sort: "sortTitle" ) %}
+      {% for page in pages %}
+      <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
 
-Nam vehicula, mi eu mattis viverra, enim enim ullamcorper nulla, id scelerisque purus diam sed lacus. Quisque viverra magna ornare condimentum fringilla. Curabitur fermentum nisl nisi, et maximus nulla mattis vel. Fusce semper diam sapien, et placerat sapien luctus vel. Integer quis aliquam sapien. Cras ut enim mauris. In in vestibulum lectus. Ut eu porta tortor. Sed ac risus quis libero luctus vulputate vel sed lorem. Praesent eget lacus condimentum metus lacinia maximus vitae et nunc.
+
+    </div>
+
+    <p style="padding-top: 5em; font-size: 80%; font-style: italic">Photo by <a href="https://unsplash.com/@patrickperkins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Perkins</a> on <a href="https://unsplash.com/s/photos/service-design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+
+</div>
