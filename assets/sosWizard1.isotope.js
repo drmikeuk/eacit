@@ -1,7 +1,7 @@
-
 var filters = [];   // store filter for each group
 var filterValue;    // store combined filters as one string
 var qsRegex;        // quick search regex
+
 
 // INIT Isotope
 var $grid = $('#stages').isotope({
@@ -20,68 +20,127 @@ var iso = $grid.data('isotope');
 
 
 // FILTER: combine filters into one eg '.red.small'. https://isotope.metafizzy.co/filtering.html
-
-// CHECK JUST THE CHANGED ONE....
-$('.radios').on( 'click', 'input', function() {
-  var $this = $(this);
-  console.log ("radio: " + $this.attr("id"))
-  //filters.push($this.attr("id"));
-});
-
-$('.checks').on( 'click', 'input', function() {
-  var $this = $(this);
-  if($(this).prop("checked") == true){
-      console.log( $this.attr("id") + " is checked.");
-  }
-  else if($(this).prop("checked") == false){
-      console.log($this.attr("id") + " is NOT checked.");
-  }
-
-});
-
-
-// CHECK ALL RADIOS AND CHECKBOXES
+// on click: CHECK ALL RADIOS AND CHECKBOXES
 // push to filters array; convert to filters string & call isotope with this
 $('.filters').on( 'click', 'input', function() {
+  //checkfilters ();
+
+  filters = [];
+
   // RADIOS
-  $nationality = $(".radios input:checked").val();
-  console.log($nationality);
+  filters.push("." + $(".radios input:checked").val());
 
   // CHECKBOXES #new #stdstart #fulltime #distance
   if($('#new').prop("checked") == true){
-      console.log("new");
+      filters.push(".new");
   }
   else {
-      console.log("returner");
+      filters.push(".returner");
   }
 
   if($('#stdstart').prop("checked") == true){
-      console.log("stdstart");
+      filters.push(".stdstart");
   }
   else {
-      console.log("nonstdstart");
+      filters.push(".nonstdstart");
   }
 
   if($('#fulltime').prop("checked") == true){
-      console.log("fulltime");
+      filters.push(".fulltime");
   }
   else {
-      console.log("parttime");
+      filters.push(".parttime");
   }
 
   if($('#distance').prop("checked") == true){
-      console.log("distance");
+      filters.push(".distance");
   }
   else {
-      console.log("campus");
+      filters.push(".campus");
   }
 
-  //filters.push($this.attr("id"));
+
+  // combine filters
+  filterValue = concatValues(filters);
+  //console.log(filters);
+  console.log(filterValue);
+
+  // call Isotope to filter ...
+  $grid.isotope();
+
+
 });
 
 
+// FILTER: use value of search field to filter
+var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+  //console.log('Search: '  + qsRegex);
+  // call Isotope to filter ...
+  $grid.isotope();
+}) );
 
 
+// set initial filters on page load to match buttons
+checkfilters ();
+
+
+
+
+// FUNCTIONS
+////////////
+
+// check filter radios/checkboxes
+// push to filters array; convert to filters string & call isotope with this
+function checkfilters (){
+  filters = [];
+
+  // RADIOS
+  filters.push("." + $(".radios input:checked").val());
+
+  // CHECKBOXES #new #stdstart #fulltime #distance
+  if($('#new').prop("checked") == true){
+      filters.push(".new");
+  }
+  else {
+      filters.push(".returner");
+  }
+
+  if($('#stdstart').prop("checked") == true){
+      filters.push(".stdstart");
+  }
+  else {
+      filters.push(".nonstdstart");
+  }
+
+  if($('#fulltime').prop("checked") == true){
+      filters.push(".fulltime");
+  }
+  else {
+      filters.push(".parttime");
+  }
+
+  if($('#distance').prop("checked") == true){
+      filters.push(".distance");
+  }
+  else {
+      filters.push(".campus");
+  }
+
+
+  // combine filters
+  filterValue = concatValues(filters);
+  //console.log(filters);
+  console.log(filterValue);
+
+  // call Isotope to filter ...
+  $grid.isotope();
+}
+
+
+
+
+/*
 // FILTER: combine filters into one eg '.red.small'. https://isotope.metafizzy.co/filtering.html
 $('.filterbuttons').on( 'click', 'button', function() {
   var $this = $(this);
@@ -95,44 +154,7 @@ $('.filterbuttons').on( 'click', 'button', function() {
   // Isotope filter blocks...
   $grid.isotope();
 });
-
-// use value of search field to filter
-var $quicksearch = $('.quicksearch').keyup( debounce( function() {
-  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-  //console.log('Search: '  + qsRegex);
-  // Isotope arrange cards...
-  $grid.isotope();
-  //updateFilterCount();
-}) );
-
-
-// change class on buttons (so active = primary)
-$('.filter-button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.btn-primary').removeClass('btn-primary');
-    $( this ).addClass('btn-primary');
-  });
-});
-
-
-// set initial filters on page load to match buttons
-// https://isotope.metafizzy.co/filtering.html
-// eg filter .metal AND .transition items:  $grid.isotope({ filter: '.metal.transition' });
-// home + new + stdstart + fulltime + campus
-//$grid.isotope({ filter: '.home.new.stdstart.fulltime.campus' });
-// --> this works but then buttons can't change it!  as overides the init above!
-
-// init = no selected buttons + show all content
-// https://stackoverflow.com/questions/32377281/isotope-combine-search-and-buttons-with-initial-filter
-// so "click" buttons to get to ideal start state...
-$('.filterbuttons .btn-group .btn[data-filter=".home"]').trigger('click');
-$('.filterbuttons .btn-group .btn[data-filter=".new"]').trigger('click');
-$('.filterbuttons .btn-group .btn[data-filter=".stdstart"]').trigger('click');
-$('.filterbuttons .btn-group .btn[data-filter=".fulltime"]').trigger('click');
-$('.filterbuttons .btn-group .btn[data-filter=".campus"]').trigger('click');
-
-
+*/
 
 
 // flatten object by concatting values
@@ -158,3 +180,26 @@ function debounce( fn, threshold ) {
     timeout = setTimeout( delayed, threshold );
   };
 }
+
+
+
+/*
+// FILTER: combine filters into one eg '.red.small'. https://isotope.metafizzy.co/filtering.html
+// CHECK JUST THE CHANGED ONE....
+$('.radios').on( 'click', 'input', function() {
+  var $this = $(this);
+  console.log ("radio: " + $this.attr("id"))
+  //filters.push($this.attr("id"));
+});
+
+$('.checks').on( 'click', 'input', function() {
+  var $this = $(this);
+  if($(this).prop("checked") == true){
+      console.log( $this.attr("id") + " is checked.");
+  }
+  else if($(this).prop("checked") == false){
+      console.log($this.attr("id") + " is NOT checked.");
+  }
+
+});
+*/

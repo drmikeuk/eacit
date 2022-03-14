@@ -60,7 +60,7 @@ customjs:
 
 
     <!-- CONTENT -->
-    <div class="col-lg-8 col-md-9">
+    <div class="col-lg-8 col-md-9" id="stages">
 
 {% include sossteps.md %}
 

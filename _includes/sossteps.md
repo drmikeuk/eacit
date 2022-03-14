@@ -7,14 +7,14 @@ international   Any other nationality        <i class="fas fa-globe"></i>
 new             First year on course         <i class="fas fa-plus-circle"></i>
 returner                                     <i class="fas fa-sync"></i>
 
-stdstart        Start date in September
-nonstdstart                              <i class="fas fa-calendar-alt"></i>
+stdstart        Start date in September      <i class="fas fa-calendar-check"></i>
+nonstdstart                                  <i class="fas fa-calendar-alt"></i>
 
-fulltime        Full time
+fulltime        Full time                     <i class="fas fa-user"></i>
 parttime                                      <i class="fas fa-user-clock"></i>
 
 distance        Distance learner              <i class="fas fa-satellite-dish"></i>
-campus
+campus                                        <i class="fas fa-university"></i>
 -->
 
 <div class="stage eu  new returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
@@ -26,6 +26,7 @@ campus
 <div class="stage  home eu international  new  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### IT account
 **New students**... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum.
+
 </div>
 
 

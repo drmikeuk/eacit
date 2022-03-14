@@ -29,6 +29,7 @@ $('.filterbuttons').on( 'click', 'button', function() {
   filters[ filterGroup ] = $this.attr('data-filter');
   // combine filters
   filterValue = concatValues( filters );
+  //console.log(filterValue);
   // Isotope filter blocks...
   $grid.isotope();
 });
