@@ -3,6 +3,9 @@ layout: sosblank
 title: "Wizard1"
 sosnav: "yes"
 sortTitle: "Wizard1"
+customjs:
+  - /vendor/isotope.pkgd.min.js
+  - /assets/sosWizard1.isotope.js
 ---
 
 <div class="container">
@@ -38,8 +41,8 @@ sortTitle: "Wizard1"
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="standardstart" checked>
-            <label class="form-check-label" for="standardstart">Start date in September</label>
+            <input class="form-check-input" type="checkbox" value="" id="stdstart" checked>
+            <label class="form-check-label" for="stdstart">Start date in September</label>
           </div>
 
           <div class="form-check">
@@ -59,7 +62,7 @@ sortTitle: "Wizard1"
     <!-- CONTENT -->
     <div class="col-lg-8 col-md-9">
 
-{% include sossteps.html %}
+{% include sossteps.md %}
 
     </div>
 
