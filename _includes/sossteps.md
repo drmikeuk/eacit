@@ -19,30 +19,37 @@ campus                                        <i class="fas fa-university"></i>
 
 <div class="stage eu  new returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### EU citizens
-**Settled status**... Aenean porta odio a tellus viverra bibendum. Cras sit amet erat eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
+If you have obtained 'settled' or 'pre-settled' status under the UK's EU Settlement Scheme, then you can live, study and work in the UK freely with this immigration status.
+[Find out more...](https://www.nottingham.ac.uk/studywithus/international-applicants/eu/current-students.aspx)<br/>- not v action focused (part of "study with us"); also bit on [attendance pages](https://www.nottingham.ac.uk/studentservices/servicedetails/registration/attendance-confirmation.aspx) -> make new sos page?
 </div>
 
 
 <div class="stage  home eu international  new  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### IT account
-**New students**... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum.
-[more...](https://www.nottingham.ac.uk/dts/accounts-and-access/it-account-and-password/student-it-account.aspx)
+We will send an email to your personal email address approximately three weeks before your official course start date explaining how to activate your University username.
+Once activated, please configure Multi-Factor Authentication (MFA) to secure your account.
+[Find out more...](https://www.nottingham.ac.uk/dts/accounts-and-access/it-account-and-password/student-it-account.aspx)
 </div>
 
 
 <div class="stage  home eu international  new  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### University card
-**New** ... Sed ac risus quis libero luctus vulputate vel sed lorem. Praesent eget lacus condimentum metus lacinia maximus vitae et nunc. **collect...**
-[more...](https://www.nottingham.ac.uk/studentservices/services/university-card.aspx)
+We will send an email to your personal email address approximately **HOW MANY** weeks before your official course start date explaining how to upload a photo for your University card.
+[Find out more...](https://www.nottingham.ac.uk/studentservices/services/university-card.aspx)
 </div>
 
 
-<div class="stage  home eu international  new returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
+<div class="stage  home eu international  new  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### Online registration
-**All students** ... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum. Cras sit amet erat eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-[new...](https://www.nottingham.ac.uk/studentservices/servicedetails/registration/online-registration-for-new-students.aspx)
-[returning...](https://www.nottingham.ac.uk/studentservices/servicedetails/registration/online-registration-for-returning-students.aspx)
+We will send an email to your personal email address approximately three weeks before your official course start date explaining how to activate your University username.
+Once you have done this you will be able to login to your university email to view an email with instructions for completing online registration.
+[Find out more...](https://www.nottingham.ac.uk/studentservices/servicedetails/registration/online-registration-for-new-students.aspx)
+</div>
+
+<div class="stage  home eu international  returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
+### Online registration
+All students must complete online registration for each academic year. Most returning students will be invited to register in mid-August. An email will be sent to your University email account to let you know when online registration has opened for you.
+[Find out more...](https://www.nottingham.ac.uk/studentservices/servicedetails/registration/online-registration-for-returning-students.aspx)
 </div>
 
 
@@ -74,8 +81,8 @@ New international students <b>NON</b>-standard start ... Consectetur adipiscing 
 ### BRP and Police registration
 **New international students** ... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum
 
-[brp...](https://www.nottingham.ac.uk/studywithus/international-applicants/visa-help/student-route/brp.aspx)
-[police reg...](https://www.nottingham.ac.uk/studywithus/international-applicants/visa-help/student-route/responsibilities.aspx)
+[brp...](https://www.nottingham.ac.uk/studywithus/international-applicants/visa-help/student-route/brp.aspx) - part of "study with us" so admissions?
+[police reg...](https://www.nottingham.ac.uk/studywithus/international-applicants/visa-help/student-route/responsibilities.aspx) - part of "study with us" so admissions?
 </div>
 
 
@@ -108,20 +115,21 @@ New international students <b>NON</b>-standard start ... Consectetur adipiscing 
 <div class="stage  home eu international  new returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### Module change of mind period
 **All**... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum.
-
+[news item...](https://www.nottingham.ac.uk/currentstudents/news/module-choice-and-change-of-mind-period)
 </div>
 
 
 <div class="stage  home eu international  new returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### Modules in Moodle - explain what this is!
 **All**... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum.
+[faq...](https://www.nottingham.ac.uk/studentservices/questions-and-answers/nottinghamhub/why-cant-i-see-my-module-entries-in-moodle.aspx)
 </div>
 
 
 <div class="stage  home eu international  new  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### Personal tutor
 **new**... Consectetur adipiscing elit. Sed vel ligula sit amet ipsum euismod eleifend ac sit amet ante. Fusce sollicitudin, augue sit amet tempor hendrerit, enim erat sodales diam, a suscipit erat mauris tempor ante. Aenean porta odio a tellus viverra bibendum.
-
+[more...](https://www.nottingham.ac.uk/studyingeffectively/teaching/personaltutors/index.aspx) - top hit but not action focused [faq](https://www.nottingham.ac.uk/studentservices/questions-and-answers/nottinghamhub/where-can-i-find-my-personal-tutors-details.aspx)
 </div>
 
 
