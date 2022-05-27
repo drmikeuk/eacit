@@ -17,12 +17,13 @@ distance        Distance learner              <i class="fas fa-satellite-dish"><
 campus                                        <i class="fas fa-university"></i>
 -->
 
+<!-- dont want this - just different flavour attendance confirmation
 <div class="stage eu  new returner  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### EU citizens
 If you have obtained 'settled' or 'pre-settled' status under the UK's EU Settlement Scheme, then you can live, study and work in the UK freely with this immigration status.
 [Find out more...](https://www.nottingham.ac.uk/studywithus/international-applicants/eu/current-students.aspx)<br/>- not v action focused (part of "study with us"); also bit on [attendance pages](https://www.nottingham.ac.uk/studentservices/servicedetails/registration/attendance-confirmation.aspx) -> make new sos page?
 </div>
-
+-->
 
 <div class="stage  home eu international  new  stdstart nonstdstart  fulltime parttime  distance campus" markdown="1">
 ### IT account

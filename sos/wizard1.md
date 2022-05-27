@@ -42,7 +42,7 @@ customjs:
 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="stdstart" checked>
-            <label class="form-check-label" for="stdstart">Start date in September</label>
+            <label class="form-check-label" for="stdstart">Start date 20 Sept - 1 Oct</label>
           </div>
 
           <div class="form-check">
